@@ -19,40 +19,40 @@ export const metadata: Metadata = {
 export default function Corporate() {
   return (
     <main className="bg-white">
-      <section className="pt-40 pb-24 bg-slate-50 border-b border-slate-100">
-        <div className="max-w-[1440px] mx-auto px-8 md:px-16 text-center space-y-8">
+      <section className="pt-32 md:pt-40 pb-16 md:pb-24 bg-slate-50 border-b border-slate-100">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-16 text-center space-y-6 md:space-y-8">
           <ScrollReveal direction="down">
             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary">🏢 Corporate</span>
-            <h1 className="text-6xl md:text-7xl font-black text-slate-900 tracking-tight leading-none mt-6">
+            <h1 className="text-4xl md:text-7xl font-black text-slate-900 tracking-tight leading-tight md:leading-none mt-6">
               Train Your Team. <br />
               <span className="text-primary italic">Improve Performance.</span>
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
-            <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">
               Scalable learning solutions for organizations that want to leverage data and technology for growth.
             </p>
           </ScrollReveal>
         </div>
       </section>
       
-      <section className="py-24">
-        <div className="max-w-[1440px] mx-auto px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="py-16 md:py-24">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, i) => (
             <ScrollReveal key={i} delay={i * 0.1} direction="up">
-              <div className="bg-white p-12 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group h-full">
-                <div className="space-y-6">
-                  <div className="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center text-primary font-black text-xs">{i+1}</div>
-                  <h3 className="text-2xl font-black text-slate-900 tracking-tight">{service.title}</h3>
-                  <p className="text-slate-500 font-medium leading-relaxed">{service.desc}</p>
+              <div className="bg-white p-8 md:p-12 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group h-full">
+                <div className="space-y-4 md:space-y-6">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/5 rounded-xl flex items-center justify-center text-primary font-black text-xs">{i+1}</div>
+                  <h3 className="text-xl md:text-2xl font-black text-slate-900 tracking-tight">{service.title}</h3>
+                  <p className="text-sm md:text-base text-slate-500 font-medium leading-relaxed">{service.desc}</p>
                 </div>
               </div>
             </ScrollReveal>
           ))}
           
           <ScrollReveal delay={0.5} direction="up">
-            <div className="bg-primary p-12 rounded-[2rem] shadow-2xl text-white flex flex-col justify-between h-full">
-               <h3 className="text-3xl font-black tracking-tight">Ready to transform your organization?</h3>
+            <div className="bg-primary p-8 md:p-12 rounded-[2rem] shadow-2xl text-white flex flex-col justify-between h-full">
+               <h3 className="text-2xl md:text-3xl font-black tracking-tight">Ready to transform your organization?</h3>
                <button className="bg-white text-primary py-5 rounded-xl font-black text-[10px] uppercase tracking-widest hover:opacity-90 transition-all mt-8">Book a Consultation</button>
             </div>
           </ScrollReveal>

@@ -8,17 +8,17 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <main className="bg-white min-h-screen pt-40 pb-24">
-      <div className="max-w-[1440px] mx-auto px-8 md:px-16">
-        <ScrollReveal className="text-center mb-20 space-y-4">
+    <main className="bg-white min-h-screen pt-32 md:pt-40 pb-16 md:pb-24">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-16">
+        <ScrollReveal className="text-center mb-12 md:mb-20 space-y-4">
            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary">📞 Contact</span>
-           <h1 className="text-6xl md:text-7xl font-black text-slate-900 tracking-tight">Let's Talk</h1>
+           <h1 className="text-4xl md:text-7xl font-black text-slate-900 tracking-tight">Let's Talk</h1>
         </ScrollReveal>
         
-        <div className="grid grid-cols-12 gap-16">
+        <div className="grid grid-cols-12 gap-10 md:gap-16">
           {/* Contact Form */}
           <ScrollReveal direction="right" className="col-span-12 lg:col-span-7">
-            <div className="bg-slate-50 p-12 lg:p-20 rounded-[3rem] h-full">
+            <div className="bg-slate-50 p-8 md:p-12 lg:p-20 rounded-[2rem] md:rounded-[3rem] h-full">
               <form className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-3">
@@ -44,21 +44,21 @@ export default function Contact() {
           </ScrollReveal>
           
           {/* Contact Info */}
-          <div className="col-span-12 lg:col-span-5 space-y-16 py-10 lg:pl-10">
-            <div className="space-y-12">
-               <ScrollReveal direction="left" delay={0.2} className="space-y-4">
-                 <h4 className="text-xs font-black uppercase tracking-widest text-primary">Direct Contact</h4>
-                 <div className="space-y-2">
-                   <p className="text-2xl font-black text-slate-900">hello@skillahead.ng</p>
-                   <p className="text-xl font-bold text-slate-500 tracking-tight">+234 XXX XXX XXXX</p>
+          <div className="col-span-12 lg:col-span-5 space-y-12 md:space-y-16 py-10 lg:pl-10">
+            <div className="space-y-10 md:space-y-12">
+               <ScrollReveal direction="left" delay={0.2} className="space-y-3 md:space-y-4 text-center lg:text-left">
+                 <h4 className="text-[10px] md:text-xs font-black uppercase tracking-widest text-primary">Direct Contact</h4>
+                 <div className="space-y-1 md:space-y-2">
+                   <p className="text-xl md:text-2xl font-black text-slate-900">hello@skillahead.ng</p>
+                   <p className="text-lg md:text-xl font-bold text-slate-500 tracking-tight">+234 XXX XXX XXXX</p>
                  </div>
                </ScrollReveal>
                
-               <div className="space-y-8">
-                 <ScrollReveal direction="left" delay={0.3}>
-                   <h4 className="text-xs font-black uppercase tracking-widest text-primary">Regional Offices</h4>
+               <div className="space-y-6 md:space-y-8">
+                 <ScrollReveal direction="left" delay={0.3} className="text-center lg:text-left">
+                   <h4 className="text-[10px] md:text-xs font-black uppercase tracking-widest text-primary">Regional Offices</h4>
                  </ScrollReveal>
-                 <div className="grid grid-cols-1 gap-6">
+                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
                    {[
                      { city: "Port Harcourt", address: "8 Old Aba Road, Nma Plaza" },
                      { city: "Lagos", address: "6 Ashabi Cole Street, Ikeja" },
@@ -74,11 +74,11 @@ export default function Contact() {
                  </div>
                </div>
                
-               <ScrollReveal direction="left" delay={0.7} className="space-y-4">
-                 <h4 className="text-xs font-black uppercase tracking-widest text-primary">Follow Us</h4>
-                 <div className="flex gap-6">
+               <ScrollReveal direction="left" delay={0.7} className="space-y-4 text-center lg:text-left">
+                 <h4 className="text-[10px] md:text-xs font-black uppercase tracking-widest text-primary">Follow Us</h4>
+                 <div className="flex gap-6 justify-center lg:justify-start">
                    {["LinkedIn", "Facebook", "Instagram"].map(social => (
-                     <a key={social} href="#" className="font-bold text-slate-400 hover:text-primary transition-colors uppercase tracking-widest text-[10px]">{social}</a>
+                     <a key={social} href="#" className="font-bold text-slate-400 hover:text-primary transition-colors uppercase tracking-widest text-[9px] md:text-[10px]">{social}</a>
                    ))}
                  </div>
                </ScrollReveal>

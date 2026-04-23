@@ -10,7 +10,7 @@ export default function Hero() {
       }}></div>
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/3 to-transparent z-0"></div>
       
-      <div className="max-w-[1440px] mx-auto px-8 md:px-16 w-full py-20 lg:py-0 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-16 w-full py-12 lg:py-0 relative z-10">
         <div className="grid grid-cols-12 gap-12 items-center">
           {/* Text Content */}
           <div className="col-span-12 lg:col-span-6 animate-fade-in">
@@ -18,18 +18,18 @@ export default function Hero() {
               <span className="w-12 h-[1px] bg-primary/30"></span>
               <span className="text-[11px] tracking-[0.25em] uppercase text-slate-500 font-bold">Elite Executive Education</span>
             </div>
-            <h1 className="text-[clamp(44px,5vw,68px)] leading-[1.05] mb-8 font-black tracking-tight text-slate-900">
-              Build Skills That <br />
+            <h1 className="text-[clamp(32px,8vw,68px)] leading-[1.05] mb-8 font-black tracking-tight text-slate-900">
+              Build Skills That <br className="hidden sm:block" />
               <span className="text-primary italic">Actually Pay.</span>
             </h1>
             <p className="text-lg md:text-xl mb-12 max-w-xl leading-relaxed text-slate-600 font-medium">
               At SkillAhead, we don't just teach tools—we help you solve real business problems using data, programming, and AI.
             </p>
-            <div className="flex flex-wrap items-center gap-6 pt-4">
-              <button className="bg-primary text-white border-2 border-primary px-10 py-4 rounded font-black text-[11px] uppercase tracking-[0.2em] shadow-2xl hover:opacity-90 transition-all shrink-0">
+            <div className="flex flex-wrap items-center gap-4 sm:gap-6 pt-4">
+              <button className="bg-primary text-white border-2 border-primary px-8 sm:px-10 py-3 sm:py-4 rounded font-black text-[10px] sm:text-[11px] uppercase tracking-[0.2em] shadow-2xl hover:opacity-90 transition-all shrink-0">
                 Explore Schools
               </button>
-              <button className="bg-white text-primary border-2 border-primary px-10 py-4 rounded font-black text-[11px] uppercase tracking-[0.2em] hover:bg-primary/5 transition-all shrink-0">
+              <button className="bg-white text-primary border-2 border-primary px-8 sm:px-10 py-3 sm:py-4 rounded font-black text-[10px] sm:text-[11px] uppercase tracking-[0.2em] hover:bg-primary/5 transition-all shrink-0">
                 Start Learning
               </button>
             </div>
@@ -69,11 +69,11 @@ export default function Hero() {
               </div>
               
               {/* Floating Info Card (Verified) */}
-              <div className="absolute -bottom-6 -right-6 md:right-8 bg-white p-6 shadow-2xl rounded-xl max-w-[280px] border border-slate-100 flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white text-xl">✓</div>
+              <div className="absolute -bottom-4 -right-4 md:right-8 bg-white p-4 sm:p-6 shadow-2xl rounded-xl max-w-[220px] sm:max-w-[280px] border border-slate-100 flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary flex items-center justify-center text-white text-lg sm:text-xl shrink-0">✓</div>
                 <div>
-                   <p className="text-[11px] font-black tracking-widest text-primary uppercase">Verified Program</p>
-                   <p className="text-[10px] font-bold text-slate-400 leading-tight mt-1">Accredited by Global Standards Board</p>
+                   <p className="text-[9px] sm:text-[11px] font-black tracking-widest text-primary uppercase">Verified Program</p>
+                   <p className="text-[9px] sm:text-[10px] font-bold text-slate-400 leading-tight mt-1">Accredited by Global Standards Board</p>
                 </div>
               </div>
             </div>
