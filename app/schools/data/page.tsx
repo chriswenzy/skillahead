@@ -1,0 +1,105 @@
+import Image from "next/image";
+import CTA from "@/components/CTA";
+
+const packages = [
+  {
+    name: "Single Package",
+    level: "Foundation Level",
+    bestFor: "Beginners starting their data journey",
+    learn: [
+      { category: "Tools", items: "Excel, Power BI, Statistics" },
+      { category: "AI", items: "ChatGPT, Gamma" },
+      { category: "Career", items: "LinkedIn Optimization, Job Opportunity Access" }
+    ],
+    duration: "1 – 2 Months",
+    outcome: "Understand core data concepts and start analyzing simple business problems.",
+    color: "blue"
+  },
+  {
+    name: "Combo Package",
+    level: "Intermediate Level",
+    bestFor: "Learners ready to go deeper and become job-ready",
+    learn: [
+      { category: "Tools", items: "Excel, Power BI, Statistics, SQL, Tableau" },
+      { category: "AI", items: "ChatGPT, Gamma, Claude" },
+      { category: "Career", items: "LinkedIn & CV Optimization, Portfolio Dev, Job Access" }
+    ],
+    duration: "2 – 4 Months",
+    outcome: "Analyze complex datasets, build dashboards, and create a strong portfolio.",
+    color: "primary"
+  },
+  {
+    name: "Career Package",
+    level: "Advanced Level",
+    bestFor: "Serious learners aiming for full career transition",
+    learn: [
+      { category: "Tools", items: "Excel, Power BI, SQL, Tableau, Python, Machine Learning" },
+      { category: "AI", items: "ChatGPT, Claude, Prompt Engineering, Automation" },
+      { category: "Career", items: "Interview Prep, Mentorship, Portfolio, Job Access" }
+    ],
+    duration: "3 – 6 Months",
+    outcome: "Become a well-rounded data professional capable of solving real business problems.",
+    color: "slate-900"
+  }
+];
+
+export default function SchoolOfData() {
+  return (
+    <main className="bg-white">
+      {/* Hero Section */}
+      <section className="pt-40 pb-24 bg-slate-50 border-b border-slate-100">
+        <div className="max-w-[1440px] mx-auto px-8 md:px-16 text-center space-y-8">
+          <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary">🟦 School of Data</span>
+          <h1 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tight leading-[1.05]">
+            Learn Data the Way <br />
+            Businesses <span className="text-primary italic">Actually Use It.</span>
+          </h1>
+          <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">
+            We don't just teach Excel, SQL, or dashboards. We teach you how to think, analyze, and make decisions like a professional.
+          </p>
+        </div>
+      </section>
+      
+      {/* Packages Section */}
+      <section className="py-32">
+        <div className="max-w-[1440px] mx-auto px-8 md:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            {packages.map((pkg, i) => (
+              <div key={i} className={`flex flex-col h-full bg-white border border-slate-100 rounded-[2rem] p-12 shadow-sm hover:shadow-2xl transition-all relative group overflow-hidden ${i === 1 ? "ring-2 ring-primary scale-105 z-10" : ""}`}>
+                {i === 1 && <span className="absolute top-6 right-8 bg-primary text-white text-[9px] font-black uppercase tracking-widest px-4 py-2 rounded-full">Most Popular</span>}
+                
+                <div className="flex-1 space-y-10">
+                  <div className="space-y-4">
+                    <p className="text-[10px] font-black uppercase tracking-widest text-primary">{pkg.level}</p>
+                    <h3 className="text-3xl font-black text-slate-900 tracking-tight">{pkg.name}</h3>
+                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Best For: {pkg.bestFor}</p>
+                  </div>
+                  
+                  <div className="space-y-8">
+                    {pkg.learn.map((sub, j) => (
+                      <div key={j} className="space-y-2">
+                        <p className="text-[10px] font-black text-slate-900 uppercase tracking-widest">{sub.category}</p>
+                        <p className="text-sm text-slate-500 font-medium leading-relaxed">{sub.items}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <div className="mt-12 pt-8 border-t border-slate-50 space-y-8">
+                  <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest text-slate-400">
+                    <span>Duration:</span>
+                    <span className="text-slate-900">{pkg.duration}</span>
+                  </div>
+                  <p className="text-xs font-black text-primary uppercase leading-relaxed tracking-widest">Outcome: <span className="text-slate-600 normal-case font-medium">{pkg.outcome}</span></p>
+                  <button className={`w-full py-5 rounded-xl font-black text-[10px] uppercase tracking-widest transition-all ${i === 1 ? "bg-primary text-white shadow-xl hover:opacity-90" : "bg-slate-100 text-slate-900 hover:bg-slate-200"}`}>Select Plan</button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      <CTA />
+    </main>
+  );
+}
