@@ -61,9 +61,9 @@ export default function Footer() {
                 <Image
                   src="/logo.png"
                   alt="Skillahead Logo"
-                  width={180}
-                  height={45}
-                  className="h-10 w-auto object-contain"
+                  width={220}
+                  height={55}
+                  className="h-14 w-auto object-contain brightness-110 contrast-110"
                 />
               </div>
             </Link>

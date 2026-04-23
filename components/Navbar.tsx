@@ -38,9 +38,9 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Skillahead Logo"
-            width={140}
-            height={32}
-            className={`h-8 w-auto object-contain transition-all duration-500 ${scrolled ? "scale-90" : "scale-100"}`}
+            width={180}
+            height={48}
+            className={`h-12 w-auto object-contain transition-all duration-500 drop-shadow-[0_4px_12px_rgba(0,0,0,0.05)] ${scrolled ? "scale-95" : "scale-100"}`}
             priority
           />
         </Link>
