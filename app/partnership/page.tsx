@@ -11,7 +11,7 @@ const opportunities = [
 export default function Partnership() {
   return (
     <main className="bg-white">
-      <section className="pt-40 pb-24 bg-slate-900 text-white overflow-hidden relative">
+      <section className="pt-40 pb-24 bg-primary-deep text-white overflow-hidden relative">
         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(white 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
         <div className="max-w-[1440px] mx-auto px-8 md:px-16 text-center space-y-8 relative z-10">
           <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/40">🤝 Partnership</span>

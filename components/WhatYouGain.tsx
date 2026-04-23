@@ -1,7 +1,9 @@
 export default function WhatYouGain() {
   return (
-    <section className="py-24 bg-primary text-white">
-      <div className="max-w-[1440px] mx-auto px-8 md:px-16 text-center mb-20">
+    <section className="py-24 bg-primary-deep text-white">
+      <div className="max-w-[1440px] mx-auto px-8 md:px-16 text-center mb-20 relative overflow-hidden">
+        {/* Subtle decorative glow */}
+        <div className="absolute top-0 left-1/2 -track-x-1/2 w-full h-full bg-primary/20 blur-[100px] pointer-events-none"></div>
         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/50 mb-4 block">Outcomes</span>
         <h2 className="text-4xl md:text-5xl font-black tracking-tight">What You Gain</h2>
       </div>

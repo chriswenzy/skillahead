@@ -24,7 +24,7 @@ export default function OurSchoolsHome() {
         </div>
         
         {/* School of Programming */}
-        <div className="bg-primary rounded-3xl p-12 shadow-2xl text-white group flex flex-col justify-between hover:shadow-[0_0_50px_rgba(0,62,179,0.3)] transition-all h-[400px]">
+        <div className="bg-primary-deep rounded-3xl p-12 shadow-2xl text-white group flex flex-col justify-between hover:shadow-[0_0_50px_rgba(0,22,61,0.3)] transition-all h-[400px]">
           <div className="space-y-6">
             <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">💻</div>
             <h3 className="text-3xl font-black tracking-tight">School of Programming</h3>
