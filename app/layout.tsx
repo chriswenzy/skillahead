@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Skillahead",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.png?v=2",
         width: 1200,
         height: 630,
         alt: "Skillahead Technical Mastery",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Skillahead | Next Era of Technical Mastery",
     description: "Accelerate your career with industry-vetted technical education and world-class specializations.",
-    images: ["/og-image.png"],
+    images: ["/og-image.png?v=2"],
   },
   robots: {
     index: true,
