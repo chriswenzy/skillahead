@@ -1,4 +1,10 @@
 import ScrollReveal from "@/components/ScrollReveal";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Contact Skillahead | Regional Support & Inquiries",
+  description: "Get in touch with Skillahead for curriculum inquiries, corporate partnerships, or student support across our regional centers.",
+};
 
 export default function Contact() {
   return (

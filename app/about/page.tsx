@@ -1,6 +1,12 @@
 import AboutHero from "@/components/AboutHero";
 import CTA from "@/components/CTA";
 import ScrollReveal from "@/components/ScrollReveal";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "About Skillahead | Our Mission & Method",
+  description: "Learn about the mission behind Skillahead—to bridge the gap between technical complexity and real-world business impact through elite specializations.",
+};
 
 export default function About() {
   return (

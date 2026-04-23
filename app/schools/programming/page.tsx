@@ -27,6 +27,12 @@ const packages = [
 ];
 
 import ScrollReveal from "@/components/ScrollReveal";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "School of Programming | Application & Engineering Mastery",
+  description: "Build robust systems with Skillahead’s Programming School. Specialized tracks in Front-End and Full-Stack Engineering.",
+};
 
 export default function SchoolOfProgramming() {
   return (

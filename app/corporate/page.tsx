@@ -9,6 +9,12 @@ const services = [
 ];
 
 import ScrollReveal from "@/components/ScrollReveal";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Corporate Solutions | institutional Training & Consulting",
+  description: "Scalable learning solutions for organizations. Train your team in Data, Analytics, and Digital Engineering with Skillahead.",
+};
 
 export default function Corporate() {
   return (

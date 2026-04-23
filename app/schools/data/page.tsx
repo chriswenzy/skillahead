@@ -44,6 +44,12 @@ const packages = [
 ];
 
 import ScrollReveal from "@/components/ScrollReveal";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "School of Data | Analytical Mastery & BI Packages",
+  description: "Master Data Analysis, SQL, Power BI, and Tableau with SkillAhead's comprehensive curriculum co-designed by tech leaders.",
+};
 
 export default function SchoolOfData() {
   return (
