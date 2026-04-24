@@ -20,7 +20,7 @@ export default function Partnership() {
             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/40">🤝 Partnership</span>
             <h1 className="text-4xl md:text-7xl font-black tracking-tighter leading-tight md:leading-none mt-6">
               Let's Build the <br className="hidden sm:block" />
-              <span className="text-primary italic">Future Together.</span>
+              <span className="text-blue-400 italic">Future Together.</span>
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>

@@ -62,7 +62,7 @@ export default function Footer() {
                   alt="Skillahead Logo"
                   width={220}
                   height={55}
-                  className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-90"
+                  className="h-10 md:h-14 w-auto object-contain brightness-110 contrast-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.1)]"
                 />
               </div>
             </Link>
