@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#002B7F] to-[#001844] text-white pt-24 md:pt-40 pb-16 relative overflow-hidden">
+    <footer className="bg-primary-deep text-white pt-24 md:pt-40 pb-16 relative overflow-hidden">
       {/* AI-ish Glowing Orbs/Gradients */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/40 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-blue-400/30 rounded-full blur-[120px] pointer-events-none"></div>
@@ -55,14 +55,14 @@ export default function Footer() {
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-y-16 lg:gap-16 items-start">
           {/* Brand Engine Column */}
           <div className="w-full lg:col-span-5 space-y-8 md:space-y-12">
-            <Link href="/" className="inline-block">
-              <div className="flex items-center gap-4">
+            <Link href="/" className="inline-block group">
+              <div className="flex items-center gap-4 transition-transform group-hover:scale-[1.02] duration-500">
                 <Image
-                  src="/logo.png"
+                  src="/logo-white-v3.png"
                   alt="Skillahead Logo"
                   width={220}
                   height={55}
-                  className="h-10 md:h-14 w-auto object-contain brightness-110 contrast-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.1)]"
+                  className="h-10 md:h-14 w-auto object-contain"
                 />
               </div>
             </Link>

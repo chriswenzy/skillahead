@@ -116,19 +116,57 @@ export default function About() {
       {/* Leadership / Teams Statistics */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
-           {[
-             { title: "Faculty Team", count: 22, desc: "Experienced professionals who teach from real industry experience—not just theory." },
-             { title: "Admin Team", count: 9, desc: "The people ensuring your learning experience is smooth, structured, and impactful." },
-             { title: "Board of Directors", count: 7, desc: "Strategic leaders guiding the vision and growth of SkillAhead." }
-           ].map((team, i) => (
-             <ScrollReveal key={i} delay={i * 0.1} direction="up">
-               <div className="space-y-4 md:space-y-6 p-6 md:p-8 rounded-3xl border border-slate-50 hover:bg-slate-50 transition-colors h-full">
-                  <div className="w-12 h-12 rounded-2xl bg-primary/5 flex items-center justify-center text-primary font-black text-lg mx-auto md:mx-0">{team.count}</div>
-                  <h4 className="text-xl md:text-2xl font-black text-slate-900 tracking-tight">{team.title}</h4>
-                  <p className="text-slate-500 font-medium leading-relaxed text-sm">{team.desc}</p>
-               </div>
-             </ScrollReveal>
-           ))}
+            {[
+              { 
+                title: "Faculty Team", 
+                count: 22, 
+                desc: "Experienced professionals who teach from real industry experience—not just theory.",
+                placeholders: 5
+              },
+              { 
+                title: "Admin Team", 
+                count: 9, 
+                desc: "The people ensuring your learning experience is smooth, structured, and impactful.",
+                placeholders: 4
+              },
+              { 
+                title: "Board of Directors", 
+                count: 7, 
+                desc: "Strategic leaders guiding the vision and growth of SkillAhead.",
+                placeholders: 3
+              }
+            ].map((team, i) => (
+              <ScrollReveal key={i} delay={i * 0.1} direction="up">
+                <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 md:space-y-8 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:border-primary/20 transition-all bg-white h-full group">
+                  {/* Image Holder / Avatar Stack */}
+                  <div className="relative h-16 w-full flex justify-center md:justify-start">
+                    <div className="flex -space-x-4">
+                      {Array.from({ length: team.placeholders }).map((_, idx) => (
+                        <div 
+                          key={idx} 
+                          className="w-14 h-14 rounded-full border-4 border-white bg-slate-100 flex items-center justify-center text-[10px] font-black text-slate-400 overflow-hidden relative shadow-lg group-hover:scale-110 transition-transform"
+                          style={{ zIndex: 10 - idx }}
+                        >
+                          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/20"></div>
+                          IMG
+                        </div>
+                      ))}
+                      <div className="w-14 h-14 rounded-full border-4 border-white bg-primary flex items-center justify-center text-[11px] font-black text-white relative shadow-lg z-0">
+                        +{team.count - team.placeholders}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4 md:space-y-6">
+                    <div className="flex items-center justify-center md:justify-start gap-4">
+                      <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary font-black text-sm">{team.count}</div>
+                      <h4 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">{team.title}</h4>
+                    </div>
+                    <p className="text-slate-500 font-medium leading-relaxed text-sm md:text-base">{team.desc}</p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
         </div>
       </section>
 
