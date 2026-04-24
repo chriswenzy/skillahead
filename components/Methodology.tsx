@@ -1,9 +1,9 @@
 export default function Methodology() {
   return (
-    <section className="py-32 relative overflow-hidden bg-white">
-      <div className="max-w-[1440px] mx-auto px-16 grid grid-cols-12 gap-gutter items-center">
+    <section className="py-16 md:py-32 relative overflow-hidden bg-white">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-16 grid grid-cols-12 gap-10 md:gap-16 items-center">
         <div className="col-span-12 lg:col-span-5 relative">
-          <h2 className="text-[32px] font-black text-primary mb-12 leading-tight tracking-tight">Scientific Approach <br/>to Success</h2>
+          <h2 className="text-3xl md:text-[32px] font-black text-primary mb-12 leading-tight tracking-tight text-center lg:text-left">Scientific Approach <br className="hidden sm:block" />to Success</h2>
           <div className="space-y-12">
             <div className="relative flex items-start gap-6 group">
               <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-[10px] font-black flex-shrink-0">01</div>
@@ -29,8 +29,8 @@ export default function Methodology() {
           </div>
         </div>
         
-        <div className="col-span-12 lg:col-span-7 flex justify-end">
-          <div className="relative w-full max-w-xl aspect-square bg-slate-50 rounded-xl flex items-center justify-center p-16 border border-slate-100 shadow-inner">
+        <div className="col-span-12 lg:col-span-7 flex justify-center lg:justify-end">
+          <div className="relative w-full max-w-xl aspect-square bg-slate-50 rounded-2xl flex items-center justify-center p-8 md:p-16 border border-slate-100 shadow-inner">
              {/* Center Diagram */}
              <div className="relative">
                 <div className="w-24 h-24 bg-primary/5 rounded-full animate-pulse absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
@@ -43,16 +43,16 @@ export default function Methodology() {
                    </div>
                 </div>
                 {/* Floating Tags */}
-                <div className="absolute top-[-80px] left-1/2 -translate-x-1/2 bg-white shadow-xl p-3 border border-slate-100 rounded flex items-center gap-2">
+                <div className="absolute -top-12 sm:top-[-80px] left-1/2 -translate-x-1/2 bg-white shadow-xl p-3 border border-slate-100 rounded flex items-center gap-2">
                    <span className="text-primary text-xs">🔒</span>
                 </div>
-                <div className="absolute right-[-80px] top-1/2 -translate-y-1/2 bg-white shadow-xl p-3 border border-slate-100 rounded flex items-center gap-2">
+                <div className="absolute -right-8 sm:right-[-80px] top-1/2 -translate-y-1/2 bg-white shadow-xl p-3 border border-slate-100 rounded flex items-center gap-2">
                    <span className="text-primary text-xs">📊</span>
                 </div>
-                <div className="absolute bottom-[-80px] left-1/2 -translate-x-1/2 bg-white shadow-xl p-3 border border-slate-100 rounded flex items-center gap-2">
+                <div className="absolute -bottom-12 sm:bottom-[-80px] left-1/2 -translate-x-1/2 bg-white shadow-xl p-3 border border-slate-100 rounded flex items-center gap-2">
                    <span className="text-primary text-xs">☁️</span>
                 </div>
-                <div className="absolute left-[-80px] top-1/2 -translate-y-1/2 bg-white shadow-xl p-3 border border-slate-100 rounded flex items-center gap-2">
+                <div className="absolute -left-8 sm:left-[-80px] top-1/2 -translate-y-1/2 bg-white shadow-xl p-3 border border-slate-100 rounded flex items-center gap-2">
                    <span className="text-primary text-xs">🧬</span>
                 </div>
              </div>

@@ -21,8 +21,8 @@ export default function ScrollReveal({
   const variants = {
     hidden: {
       opacity: 0,
-      y: direction === "up" ? 50 : direction === "down" ? -50 : 0,
-      x: direction === "left" ? 50 : direction === "right" ? -50 : 0,
+      y: direction === "up" ? 20 : direction === "down" ? -20 : 0,
+      x: 0,
     },
     visible: {
       opacity: 1,
@@ -36,7 +36,7 @@ export default function ScrollReveal({
       variants={variants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, margin: "-100px" }}
+      viewport={{ once: true, margin: "-50px" }}
       transition={{
         duration,
         delay,

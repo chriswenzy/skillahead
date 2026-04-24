@@ -17,7 +17,7 @@ export default function CTA() {
           <div className="absolute inset-0 bg-primary/20"></div>
 
           <div className="relative z-10 px-8 py-16 md:px-12 md:py-24 text-center max-w-3xl mx-auto space-y-8 md:space-y-12">
-            <h2 className="text-3xl md:text-5xl font-black !text-white !leading-tight tracking-tight">
+            <h2 className="text-[clamp(26px,8vw,48px)] font-black !text-white !leading-tight tracking-tight">
               Ready to Elevate Your <br className="hidden sm:block" />Intellectual Capital?
             </h2>
             <p className="text-base md:text-lg !text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">

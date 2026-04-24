@@ -5,7 +5,7 @@ export default function WhatYouGain() {
         {/* Subtle decorative glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-primary/20 blur-[100px] pointer-events-none"></div>
         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/50 mb-4 block">Outcomes</span>
-        <h2 className="text-3xl md:text-5xl font-black tracking-tight">What You Gain</h2>
+        <h2 className="text-[clamp(26px,8vw,48px)] font-black tracking-tight">What You Gain</h2>
       </div>
       
       <div className="max-w-[1440px] mx-auto px-6 md:px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">

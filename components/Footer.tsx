@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#002B7F] to-[#001844] text-white pt-40 pb-16 relative overflow-hidden">
+    <footer className="bg-gradient-to-b from-[#002B7F] to-[#001844] text-white pt-24 md:pt-40 pb-16 relative overflow-hidden">
       {/* AI-ish Glowing Orbs/Gradients */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/40 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-blue-400/30 rounded-full blur-[120px] pointer-events-none"></div>
@@ -14,37 +14,37 @@ export default function Footer() {
         backgroundSize: '40px 40px'
       }}></div>
 
-      <div className="max-w-[1440px] mx-auto px-6 md:px-16 relative z-10">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-16 relative z-10">
         {/* Executive Newsletter Module */}
         <div className="mb-20 md:mb-32">
-          <div className="bg-white/[0.03] p-8 md:p-16 rounded-[2rem] md:rounded-[3rem] border border-white/10 backdrop-blur-3xl relative group overflow-hidden">
+          <div className="bg-white/[0.03] p-6 sm:p-8 md:p-16 rounded-[2rem] md:rounded-[3rem] border border-white/10 backdrop-blur-3xl relative group overflow-hidden">
             <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <div className="grid grid-cols-12 gap-8 md:gap-12 items-center relative z-10">
-              <div className="col-span-12 lg:col-span-6 space-y-4 md:space-y-6">
-                <div className="flex items-center gap-3 text-primary">
-                   <span className="w-8 md:w-12 h-[1px] bg-primary"></span>
+            <div className="flex flex-col lg:grid lg:grid-cols-12 gap-y-8 lg:gap-12 items-center relative z-10">
+              <div className="w-full lg:col-span-6 space-y-4 md:space-y-6 text-center lg:text-left">
+                <div className="flex items-center justify-center lg:justify-start gap-3 text-blue-400">
+                   <span className="w-8 md:w-12 h-[1px] bg-blue-400/50"></span>
                    <span className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.4em]">Proprietary Intelligence</span>
                 </div>
-                <h3 className="text-3xl md:text-5xl font-black tracking-tight leading-[1.1]">
+                <h3 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight leading-[1.1] break-words">
                   Stay Ahead <br className="hidden sm:block" />
                   <span className="text-white/70">of the Technical Curve.</span>
                 </h3>
-                <p className="text-white/80 text-base md:text-lg max-w-md font-medium">
+                <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-md font-medium mx-auto lg:mx-0 break-words">
                   Join our elite network to receive weekly intelligence reports, career strategies, and AI-driven market insights.
                 </p>
               </div>
-              <div className="col-span-12 lg:col-span-6">
-                <div className="bg-white/5 p-3 md:p-4 rounded-2xl border border-white/20 flex flex-col md:flex-row gap-4">
+              <div className="w-full lg:col-span-6">
+                <div className="bg-white/5 p-2 sm:p-4 rounded-2xl border border-white/20 flex flex-col gap-3 sm:gap-4">
                   <input
                     type="email"
                     placeholder="ENTER INSTITUTIONAL EMAIL"
-                    className="flex-1 bg-transparent px-4 sm:px-6 py-4 sm:py-5 rounded-xl text-[10px] font-black tracking-widest placeholder:text-white/40 outline-none focus:bg-white/5 transition-all text-white"
+                    className="w-full bg-transparent px-4 py-4 rounded-xl text-[10px] font-black tracking-widest placeholder:text-white/40 outline-none focus:bg-white/5 transition-all text-white border border-white/10"
                   />
-                  <button className="bg-primary text-white px-8 md:px-12 py-4 md:py-5 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-primary-dark transition-all shadow-2xl shadow-primary/40 whitespace-nowrap">
+                  <button className="bg-primary text-white w-full px-6 py-4 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-primary-dark transition-all shadow-2xl shadow-primary/40">
                     Secure Access
                   </button>
                 </div>
-                <p className="text-[9px] text-white/50 font-bold uppercase tracking-widest mt-4 md:mt-6 text-center lg:text-left">
+                <p className="text-[8px] sm:text-[9px] text-white/50 font-bold uppercase tracking-widest mt-4 md:mt-6 text-center lg:text-left">
                   🔒 Encrypted Connection. No Spam Protocols Active.
                 </p>
               </div>
@@ -52,10 +52,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-12 gap-y-16 lg:gap-16 items-start">
-
+        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-y-16 lg:gap-16 items-start">
           {/* Brand Engine Column */}
-          <div className="col-span-12 lg:col-span-5 space-y-8 md:space-y-12">
+          <div className="w-full lg:col-span-5 space-y-8 md:space-y-12">
             <Link href="/" className="inline-block">
               <div className="flex items-center gap-4">
                 <Image
@@ -63,43 +62,43 @@ export default function Footer() {
                   alt="Skillahead Logo"
                   width={220}
                   height={55}
-                  className="h-10 md:h-14 w-auto object-contain brightness-110 contrast-110"
+                  className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-90"
                 />
               </div>
             </Link>
-            <p className="text-white/80 text-sm md:text-base font-medium leading-relaxed max-w-sm tracking-tight Poppins">
+            <p className="text-white/80 text-sm md:text-base font-medium leading-relaxed max-w-sm tracking-tight Poppins break-words">
               Bridging the gap between technical complexity and business mastery through AI-optimized learning systems.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-4 md:pt-6">
               <div className="space-y-3">
-                <p className="text-[9px] font-black uppercase tracking-[0.3em] text-primary">Regional Center</p>
+                <p className="text-[9px] font-black uppercase tracking-[0.3em] text-blue-400">Regional Center</p>
                 <p className="text-[10px] font-bold tracking-widest uppercase text-white">Port Harcourt, NG</p>
               </div>
               <div className="space-y-3">
-                <p className="text-[9px] font-black uppercase tracking-[0.3em] text-primary">Inquiries</p>
+                <p className="text-[9px] font-black uppercase tracking-[0.3em] text-blue-400">Inquiries</p>
                 <p className="text-[10px] font-bold tracking-widest uppercase text-white">hello@skillahead.ng</p>
               </div>
             </div>
           </div>
 
           {/* Navigation Matrix */}
-          <div className="col-span-12 lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-12 md:gap-16">
+          <div className="w-full lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-12 md:gap-16">
             <div className="space-y-8 md:space-y-10">
-              <h5 className="text-[10px] font-black uppercase tracking-[0.5em] text-white border-l-2 border-primary pl-4">Architecture</h5>
+              <h5 className="text-[10px] font-black uppercase tracking-[0.5em] text-white border-l-2 border-blue-400/50 pl-4">Architecture</h5>
               <ul className="space-y-4 md:space-y-6">
                 <li><Link href="/schools/data" className="group flex items-center gap-3 text-sm font-bold text-white/80 hover:text-white transition-all underline decoration-white/10 underline-offset-4">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary scale-0 group-hover:scale-100 transition-transform"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400 scale-0 group-hover:scale-100 transition-transform"></span>
                   School of Data
                 </Link></li>
                 <li><Link href="/schools/programming" className="group flex items-center gap-3 text-sm font-bold text-white/80 hover:text-white transition-all underline decoration-white/10 underline-offset-4">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary scale-0 group-hover:scale-100 transition-transform"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400 scale-0 group-hover:scale-100 transition-transform"></span>
                   School of Programming
                 </Link></li>
               </ul>
             </div>
 
             <div className="space-y-8 md:space-y-10">
-              <h5 className="text-[10px] font-black uppercase tracking-[0.5em] text-white border-l-2 border-primary pl-4">Network</h5>
+              <h5 className="text-[10px] font-black uppercase tracking-[0.5em] text-white border-l-2 border-blue-400/50 pl-4">Network</h5>
               <ul className="space-y-4 md:space-y-6">
                 <li><Link href="/locations" className="text-white/80 hover:text-white text-sm font-bold transition-all underline decoration-white/10 underline-offset-4">Campuses</Link></li>
                 <li><Link href="/corporate" className="text-white/80 hover:text-white text-sm font-bold transition-all underline decoration-white/10 underline-offset-4">Corporate Engine</Link></li>
@@ -117,11 +116,19 @@ export default function Footer() {
           </div>
           <p className="text-[8px] font-black uppercase tracking-[0.5em] text-white/40 text-center">© 2024 SKILLAHEAD ALL RIGHTS RESERVED.</p>
           <div className="flex gap-4">
-            {["LI", "FB", "IG"].map(social => (
-              <Link key={social} href="#" className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-white/20 flex items-center justify-center text-[9px] md:text-[10px] font-black text-white/60 hover:border-primary hover:text-primary transition-all bg-white/5">
+            {["LI", "FB", "IG"].map(social => ( social === "LI" ? (
+              <a key={social} href="https://linkedin.com/company/skillahead" target="_blank" rel="noopener noreferrer" className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-white/20 flex items-center justify-center text-[9px] md:text-[10px] font-black text-white/60 hover:border-blue-400 hover:text-blue-400 transition-all bg-white/5">
+                {social}
+              </a>
+            ) : social === "IG" ? (
+              <a key={social} href="https://instagram.com/skillahead" target="_blank" rel="noopener noreferrer" className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-white/20 flex items-center justify-center text-[9px] md:text-[10px] font-black text-white/60 hover:border-blue-400 hover:text-blue-400 transition-all bg-white/5">
+                {social}
+              </a>
+            ) : (
+              <Link key={social} href="#" className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-white/20 flex items-center justify-center text-[9px] md:text-[10px] font-black text-white/60 hover:border-blue-400 hover:text-blue-400 transition-all bg-white/5">
                 {social}
               </Link>
-            ))}
+            )))}
           </div>
         </div>
       </div>

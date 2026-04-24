@@ -1,13 +1,13 @@
 export default function FellowshipOutcomes() {
   return (
-    <section className="py-32 bg-white">
-      <div className="max-w-[1440px] mx-auto px-16">
-        <h2 className="text-3xl font-black text-primary mb-24 text-center tracking-tight">Fellowship Outcomes</h2>
-        <div className="grid grid-cols-12 gap-8">
+    <section className="py-16 md:py-32 bg-white">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-16">
+        <h2 className="text-2xl md:text-3xl font-black text-primary mb-12 md:mb-24 text-center tracking-tight uppercase tracking-[0.2em]">Fellowship Outcomes</h2>
+        <div className="grid grid-cols-12 gap-8 md:gap-12">
           {/* Testimonial */}
-          <div className="col-span-12 lg:col-span-7 bg-[#f8fafc] p-16 rounded-2xl relative border border-slate-100 shadow-sm group">
+          <div className="col-span-12 lg:col-span-7 bg-[#f8fafc] p-8 md:p-16 rounded-[2rem] relative border border-slate-100 shadow-sm group">
             <span className="text-7xl font-black text-primary/10 absolute top-8 right-8 pointer-events-none group-hover:scale-110 transition-transform">“</span>
-            <p className="text-2xl font-bold leading-snug mb-10 text-slate-800 tracking-tight">
+            <p className="text-xl md:text-2xl font-bold leading-snug mb-10 text-slate-800 tracking-tight">
               "The rigor of the Skillahead curriculum exceeded my expectations. It wasn't just about learning to code; it was about learning to think like an engineer at a global scale."
             </p>
             <div className="flex items-center gap-6">
