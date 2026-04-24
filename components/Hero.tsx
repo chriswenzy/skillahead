@@ -60,7 +60,7 @@ export default function Hero() {
                 <Image 
                   alt="Technical Mastery" 
                   className="w-full h-full object-cover" 
-                  src="/hero-mastery.png"
+                  src="/about-team-v2.png"
                   width={800}
                   height={800}
                   priority

@@ -6,28 +6,28 @@ const offices = [
     type: "SkillAhead Data Academy",
     address: "8 Old Aba Road, Nma Plaza, Opposite Customary Court",
     courses: "Data (Single, Combo) • Programming (Front-End, Full-Stack)",
-    image: "/locations/port-harcourt.png" 
+    image: "/locations/port-harcourt-v2.png" 
   },
   {
     city: "Lagos",
     type: "SkillAhead Data Academy",
     address: "6 Ashabi Cole Street, Ladegbuwa Plaza, Agidingbi, CBD, Ikeja",
     courses: "Data (Single, Combo)",
-    image: "/locations/lagos.png"
+    image: "/locations/lagos-v2.png"
   },
   {
     city: "Abuja",
     type: "SkillAhead Data Academy",
     address: "16 Gwani Street, CarlCare Building, Wuse Zone 4",
     courses: "Data (Single, Combo)",
-    image: "/locations/abuja.png"
+    image: "/locations/abuja-v2.png"
   },
   {
     city: "Online",
     type: "Live Virtual Academy",
     address: "High-engagement Zoom sessions with real instructors",
     courses: "Data (Single, Combo, Career) • Programming (Front-End, Full-Stack)",
-    image: "/locations/online.png"
+    image: "/locations/online-v2.png"
   }
 ];
 

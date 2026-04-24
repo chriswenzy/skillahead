@@ -2,9 +2,9 @@
 
 @layer base {
   :root {
-    --primary: #00359E;
-    --primary-dark: #002D82;
-    --primary-deep: #001844;
+    --primary: #00ADEF;
+    --primary-dark: #008cc1;
+    --primary-deep: #00609b;
     --background: #ffffff;
     --surface: #f8fafc;
     --foreground: #0f172a;

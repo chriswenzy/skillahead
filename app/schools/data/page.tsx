@@ -104,7 +104,7 @@ export default function SchoolOfData() {
                       <span className="text-slate-900">{pkg.duration}</span>
                     </div>
                     <p className="text-xs font-black text-primary uppercase leading-relaxed tracking-widest">Outcome: <span className="text-slate-600 normal-case font-medium">{pkg.outcome}</span></p>
-                    <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className={`w-full py-5 rounded-xl font-black text-[10px] uppercase tracking-widest transition-all text-center ${i === 1 ? "bg-primary text-white shadow-xl hover:opacity-90" : "bg-slate-100 text-slate-900 hover:bg-slate-200"}`}>Select Plan</a>
+                    <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className={`w-full py-5 rounded-2xl font-black text-[11px] uppercase tracking-widest transition-all text-center border-2 ${i === 1 ? "bg-primary border-primary text-white shadow-2xl hover:scale-[1.02]" : "bg-transparent border-slate-200 text-slate-900 hover:border-primary hover:text-primary"}`}>Select Plan</a>
                   </div>
                 </div>
               </ScrollReveal>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AboutHero from "@/components/AboutHero";
 import CTA from "@/components/CTA";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -41,12 +42,78 @@ export default function About() {
              </p>
           </ScrollReveal>
           <ScrollReveal direction="left" delay={0.2} className="col-span-12 lg:col-span-6 mt-8 lg:mt-0">
-             <div className="h-48 md:h-64 bg-slate-50 rounded-[2rem] flex items-center justify-center text-4xl grayscale border border-slate-100">🛡️</div>
+             <div className="relative aspect-video lg:aspect-square bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 shadow-2xl group">
+                <Image 
+                  src="/about-team-v2.png" 
+                  alt="SkillAhead Team" 
+                  fill 
+                  className="object-cover group-hover:scale-105 transition-transform duration-[3s]"
+                />
+                <div className="absolute inset-0 bg-primary/10 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+             </div>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* Leadership / Teams */}
+      {/* Academic Board / Faculty */}
+      <section className="py-16 md:py-24 bg-surface">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-16 container">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-20 gap-8">
+            <div className="max-w-2xl space-y-4">
+              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary">Governance</span>
+              <h2 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight">The Academic Board</h2>
+              <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed">
+                Chaired by world-renowned thinkers, our board ensures the intellectual integrity of every program.
+              </p>
+            </div>
+            <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border-2 border-slate-900 text-slate-900 font-black text-[10px] uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all shadow-xl">
+              View All Faculty
+            </a>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+            {[
+              {
+                name: "Anietie Etuk",
+                role: "Founder of SkillAhead Academy || Data Specialist",
+                image: "/team/anietie-v2.png"
+              },
+              {
+                name: "Mr Gospel Chinedu Nwachukwu",
+                role: "Data Analytics | Instructor || Specializing in SQL and Tableau",
+                image: "/team/gospel-v2.png"
+              },
+              {
+                name: "Mr Jegbefume Anthony",
+                role: "Data Analytics Instructor | Excel, PowerBI",
+                image: "/team/jegbefume-v2.png"
+              }
+            ].map((member, i) => (
+              <ScrollReveal key={i} delay={i * 0.1} direction="up">
+                <div className="group relative">
+                  <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl mb-8 relative">
+                    <Image 
+                      src={member.image} 
+                      alt={member.name} 
+                      fill 
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="text-xl md:text-2xl font-black text-slate-900 tracking-tight">{member.name}</h4>
+                    <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary leading-relaxed">
+                      {member.role}
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership / Teams Statistics */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
            {[

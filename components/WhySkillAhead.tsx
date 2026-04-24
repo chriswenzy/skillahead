@@ -53,7 +53,7 @@ export default function WhySkillAhead() {
             <ScrollReveal direction="left" delay={0.3}>
               <div className="aspect-square bg-slate-50 rounded-[3rem] relative overflow-hidden flex items-center justify-center border border-slate-100 shadow-2xl group">
                  <Image 
-                    src="/theory-to-impact.png" 
+                    src="/theory-to-impact-v2.png" 
                     alt="Bridge the Gap" 
                     fill 
                     className="object-cover group-hover:scale-105 transition-transform duration-[2s]"
