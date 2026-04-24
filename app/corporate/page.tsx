@@ -53,7 +53,7 @@ export default function Corporate() {
           <ScrollReveal delay={0.5} direction="up">
             <div className="bg-primary p-8 md:p-12 rounded-[2rem] shadow-2xl text-white flex flex-col justify-between h-full">
                <h3 className="text-2xl md:text-3xl font-black tracking-tight">Ready to transform your organization?</h3>
-               <button className="bg-white text-primary py-5 rounded-xl font-black text-[10px] uppercase tracking-widest hover:opacity-90 transition-all mt-8">Book a Consultation</button>
+               <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="bg-white text-primary py-5 rounded-xl font-black text-[10px] uppercase tracking-widest hover:opacity-90 transition-all mt-8 text-center block">Book a Consultation</a>
             </div>
           </ScrollReveal>
         </div>

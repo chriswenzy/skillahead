@@ -36,11 +36,10 @@ export default function Navbar() {
   }, [mobileMenuOpen]);
 
   const navLinks = [
-    { name: "HOME", href: "/" },
-    { name: "ABOUT", href: "/about" },
     { name: "LOCATIONS", href: "/locations" },
     { name: "CORPORATE", href: "/corporate" },
     { name: "PARTNERSHIP", href: "/partnership" },
+    { name: "ABOUT", href: "/about" },
   ];
 
   const schools = [
@@ -70,19 +69,6 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
-            {navLinks.slice(0, 1).map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={`relative font-black text-xs tracking-widest transition-all px-2 py-1 group ${pathname === link.href ? "text-primary" : "text-slate-500 hover:text-primary"
-                  }`}
-              >
-                {link.name}
-                <span className={`absolute -bottom-1 left-0 h-[2px] bg-primary transition-all duration-300 ${pathname === link.href ? "w-full" : "w-0 group-hover:w-full"
-                  }`}></span>
-              </Link>
-            ))}
-
             <div
               className="relative"
               onMouseEnter={() => setSchoolsOpen(true)}
@@ -116,7 +102,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            {navLinks.slice(1).map((link) => (
+            {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
@@ -159,12 +145,6 @@ export default function Navbar() {
             <div>
               <p className="text-[10px] font-black tracking-[0.3em] text-slate-400 uppercase mb-6">Discovery</p>
               <div className="space-y-4">
-                {navLinks.slice(0, 1).map((link) => (
-                  <Link key={link.name} href={link.href} className={`block text-2xl font-black tracking-tighter ${pathname === link.href ? "text-primary" : "text-slate-900"}`}>
-                    {link.name}
-                  </Link>
-                ))}
-                
                 {/* Schools Mobile Section */}
                 <div className="space-y-4">
                   <p className="text-2xl font-black tracking-tighter text-slate-900">SCHOOLS</p>
@@ -177,7 +157,7 @@ export default function Navbar() {
                   </div>
                 </div>
 
-                {navLinks.slice(1).map((link) => (
+                {navLinks.map((link) => (
                   <Link key={link.name} href={link.href} className={`block text-2xl font-black tracking-tighter ${pathname === link.href ? "text-primary" : "text-slate-900"}`}>
                     {link.name}
                   </Link>

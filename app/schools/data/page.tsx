@@ -9,7 +9,7 @@ const packages = [
     learn: [
       { category: "Tools", items: "Excel, Power BI, Statistics" },
       { category: "AI", items: "ChatGPT, Gamma" },
-      { category: "Career", items: "LinkedIn Optimization, Job Opportunity Access" }
+      { category: "Career", items: "LinkedIn Optimization, Job Opportunity Links" }
     ],
     duration: "1 – 2 Months",
     outcome: "Understand core data concepts and start analyzing simple business problems.",
@@ -22,7 +22,7 @@ const packages = [
     learn: [
       { category: "Tools", items: "Excel, Power BI, Statistics, SQL, Tableau" },
       { category: "AI", items: "ChatGPT, Gamma, Claude" },
-      { category: "Career", items: "LinkedIn & CV Optimization, Portfolio Dev, Job Access" }
+      { category: "Career", items: "LinkedIn & CV Optimization, Portfolio Dev, Job Opportunity Links" }
     ],
     duration: "2 – 4 Months",
     outcome: "Analyze complex datasets, build dashboards, and create a strong portfolio.",
@@ -35,7 +35,7 @@ const packages = [
     learn: [
       { category: "Tools", items: "Excel, Power BI, SQL, Tableau, Python, Machine Learning" },
       { category: "AI", items: "ChatGPT, Claude, Prompt Engineering, Automation" },
-      { category: "Career", items: "Interview Prep, Mentorship, Portfolio, Job Access" }
+      { category: "Career", items: "Interview Prep, Mentorship, Portfolio, Job Opportunity Links" }
     ],
     duration: "3 – 6 Months",
     outcome: "Become a well-rounded data professional capable of solving real business problems.",
@@ -104,7 +104,7 @@ export default function SchoolOfData() {
                       <span className="text-slate-900">{pkg.duration}</span>
                     </div>
                     <p className="text-xs font-black text-primary uppercase leading-relaxed tracking-widest">Outcome: <span className="text-slate-600 normal-case font-medium">{pkg.outcome}</span></p>
-                    <button className={`w-full py-5 rounded-xl font-black text-[10px] uppercase tracking-widest transition-all ${i === 1 ? "bg-primary text-white shadow-xl hover:opacity-90" : "bg-slate-100 text-slate-900 hover:bg-slate-200"}`}>Select Plan</button>
+                    <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className={`w-full py-5 rounded-xl font-black text-[10px] uppercase tracking-widest transition-all text-center ${i === 1 ? "bg-primary text-white shadow-xl hover:opacity-90" : "bg-slate-100 text-slate-900 hover:bg-slate-200"}`}>Select Plan</a>
                   </div>
                 </div>
               </ScrollReveal>

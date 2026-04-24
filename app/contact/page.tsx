@@ -38,7 +38,7 @@ export default function Contact() {
                   <label className="text-[10px] font-black uppercase tracking-widest text-slate-400">Message</label>
                   <textarea rows={6} className="w-full bg-white border border-slate-100 rounded-xl px-6 py-4 text-sm font-medium focus:ring-2 focus:ring-primary outline-none transition-all resize-none" placeholder="Tell us about your goals..."></textarea>
                 </div>
-                <button className="w-full py-5 bg-primary text-white rounded-2xl font-black text-[11px] uppercase tracking-[0.2em] shadow-2xl hover:opacity-90 transition-all">Send Message</button>
+                <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="w-full py-5 bg-primary text-white rounded-2xl font-black text-[11px] uppercase tracking-[0.2em] shadow-2xl hover:opacity-90 transition-all text-center block">Send Message</a>
               </form>
             </div>
           </ScrollReveal>
@@ -49,8 +49,8 @@ export default function Contact() {
                <ScrollReveal direction="left" delay={0.2} className="space-y-3 md:space-y-4 text-center lg:text-left">
                  <h4 className="text-[10px] md:text-xs font-black uppercase tracking-widest text-primary">Direct Contact</h4>
                  <div className="space-y-1 md:space-y-2">
-                   <p className="text-xl md:text-2xl font-black text-slate-900">hello@skillahead.ng</p>
-                   <p className="text-lg md:text-xl font-bold text-slate-500 tracking-tight">+234 XXX XXX XXXX</p>
+                   <p className="text-xl md:text-2xl font-black text-slate-900">info@skillahead.ng</p>
+                   <p className="text-lg md:text-xl font-bold text-slate-500 tracking-tight">+234 806 619 9860</p>
                  </div>
                </ScrollReveal>
                
@@ -74,14 +74,18 @@ export default function Contact() {
                  </div>
                </div>
                
-               <ScrollReveal direction="left" delay={0.7} className="space-y-4 text-center lg:text-left">
-                 <h4 className="text-[10px] md:text-xs font-black uppercase tracking-widest text-primary">Follow Us</h4>
-                 <div className="flex gap-6 justify-center lg:justify-start">
-                   {["LinkedIn", "Facebook", "Instagram"].map(social => (
-                     <a key={social} href="#" className="font-bold text-slate-400 hover:text-primary transition-colors uppercase tracking-widest text-[9px] md:text-[10px]">{social}</a>
-                   ))}
-                 </div>
-               </ScrollReveal>
+                <ScrollReveal direction="left" delay={0.7} className="space-y-4 text-center lg:text-left">
+                  <h4 className="text-[10px] md:text-xs font-black uppercase tracking-widest text-primary">Follow Us</h4>
+                  <div className="flex gap-6 justify-center lg:justify-start">
+                    {[
+                      { name: "LinkedIn", href: "https://www.linkedin.com/company/skillahead/" },
+                      { name: "Facebook", href: "https://web.facebook.com/skillaheadng" },
+                      { name: "Instagram", href: "https://www.instagram.com/skillaheadng" }
+                    ].map(social => (
+                      <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="font-bold text-slate-400 hover:text-primary transition-colors uppercase tracking-widest text-[9px] md:text-[10px]">{social.name}</a>
+                    ))}
+                  </div>
+                </ScrollReveal>
             </div>
           </div>
         </div>

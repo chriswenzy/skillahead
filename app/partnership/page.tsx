@@ -46,6 +46,12 @@ export default function Partnership() {
               </ScrollReveal>
             ))}
           </div>
+          
+          <ScrollReveal delay={0.4} className="mt-16 text-center">
+            <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-white px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-widest shadow-2xl hover:scale-105 active:scale-95 transition-all">
+              Partner With Us
+            </a>
+          </ScrollReveal>
         </div>
       </section>
       

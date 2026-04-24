@@ -67,7 +67,8 @@ export default function LocationsList() {
                    </div>
                 </div>
               </div>
-              <div className="mt-6 md:mt-8 pt-6 md:pt-8 border-t border-slate-50">
+              <div className="mt-6 md:mt-8 pt-6 md:pt-8 border-t border-slate-50 flex gap-4 items-start">
+                 <span className="text-primary text-sm mt-0.5 shrink-0">📍</span>
                  <p className="text-xs md:text-sm font-medium text-slate-500 leading-relaxed italic">{office.address}</p>
               </div>
             </div>

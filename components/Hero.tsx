@@ -26,12 +26,12 @@ export default function Hero() {
               At SkillAhead, we don't just teach tools—we help you solve real business problems using data, programming, and AI.
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 pt-4">
-              <button className="bg-primary text-white border-2 border-primary px-8 md:px-10 py-3 md:py-4 rounded font-black text-[10px] md:text-[11px] uppercase tracking-[0.2em] shadow-2xl hover:opacity-90 transition-all text-center">
+              <Link href="/schools/data" className="bg-primary text-white border-2 border-primary px-8 md:px-10 py-3 md:py-4 rounded font-black text-[10px] md:text-[11px] uppercase tracking-[0.2em] shadow-2xl hover:opacity-90 transition-all text-center">
                 Explore Schools
-              </button>
-              <button className="bg-white text-primary border-2 border-primary px-8 md:px-10 py-3 md:py-4 rounded font-black text-[10px] md:text-[11px] uppercase tracking-[0.2em] hover:bg-primary/5 transition-all text-center">
+              </Link>
+              <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="bg-white text-primary border-2 border-primary px-8 md:px-10 py-3 md:py-4 rounded font-black text-[10px] md:text-[11px] uppercase tracking-[0.2em] hover:bg-primary/5 transition-all text-center">
                 Start Learning
-              </button>
+              </a>
             </div>
             
             {/* Trust Badge */}
@@ -73,7 +73,7 @@ export default function Hero() {
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary flex items-center justify-center text-white text-lg sm:text-xl shrink-0">✓</div>
                 <div>
                    <p className="text-[9px] sm:text-[11px] font-black tracking-widest text-primary uppercase">Verified Program</p>
-                   <p className="text-[9px] sm:text-[10px] font-bold text-slate-400 leading-tight mt-1">Accredited by Global Standards Board</p>
+                   <p className="text-[9px] sm:text-[10px] font-bold text-slate-400 leading-tight mt-1">Accredited by the Institute Of Analytics (IOA), United Kingdom</p>
                 </div>
               </div>
             </div>

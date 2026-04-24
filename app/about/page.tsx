@@ -50,12 +50,13 @@ export default function About() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
            {[
-             { title: "Faculty Team", desc: "Experienced professionals who teach from real industry experience—not just theory." },
-             { title: "Admin Team", desc: "The people ensuring your learning experience is smooth, structured, and impactful." },
-             { title: "Board of Directors", desc: "Strategic leaders guiding the vision and growth of SkillAhead." }
+             { title: "Faculty Team", count: 22, desc: "Experienced professionals who teach from real industry experience—not just theory." },
+             { title: "Admin Team", count: 9, desc: "The people ensuring your learning experience is smooth, structured, and impactful." },
+             { title: "Board of Directors", count: 7, desc: "Strategic leaders guiding the vision and growth of SkillAhead." }
            ].map((team, i) => (
              <ScrollReveal key={i} delay={i * 0.1} direction="up">
                <div className="space-y-4 md:space-y-6 p-6 md:p-8 rounded-3xl border border-slate-50 hover:bg-slate-50 transition-colors h-full">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/5 flex items-center justify-center text-primary font-black text-lg mx-auto md:mx-0">{team.count}</div>
                   <h4 className="text-xl md:text-2xl font-black text-slate-900 tracking-tight">{team.title}</h4>
                   <p className="text-slate-500 font-medium leading-relaxed text-sm">{team.desc}</p>
                </div>

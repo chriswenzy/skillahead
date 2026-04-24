@@ -28,7 +28,7 @@ export default function Specializations() {
               <span className="bg-white/10 border border-white/20 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest mb-4 md:mb-6 inline-block">Flagship Program</span>
               <h3 className="text-[clamp(24px,8vw,40px)] font-black leading-tight tracking-tight">Data Analytics & <br className="hidden sm:block" />Predictive Intelligence</h3>
               <p className="text-sm md:text-md text-white/80 font-medium max-w-sm break-words whitespace-normal">Master the architecture of decision-making. From SQL foundations to advanced machine learning modeling.</p>
-              <button className="bg-white text-primary w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white/90 transition-colors shadow-lg">Enroll Now</button>
+              <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="bg-white text-primary w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white/90 transition-colors shadow-lg text-center block">Enroll Now</a>
             </div>
           </div>
           
@@ -38,17 +38,17 @@ export default function Specializations() {
               <span className="text-3xl md:text-4xl text-primary mb-4 md:mb-6 block">💻</span>
               <h4 className="text-lg md:text-xl font-bold mb-2 text-slate-900 tracking-tight">Software Engineering</h4>
               <p className="text-slate-500 font-medium text-[10px] md:text-xs mb-6 uppercase tracking-wider leading-relaxed break-words whitespace-normal">Full-stack mastery with React, Node, and Distributed Systems.</p>
-              <Link className="text-primary font-black text-[10px] uppercase tracking-[0.2em] flex items-center group-hover:translate-x-2 transition-transform" href="#">
-                View Syllabus <span>→</span>
-              </Link>
+              <a className="text-primary font-black text-[10px] uppercase tracking-[0.2em] flex items-center group-hover:translate-x-2 transition-transform" href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer">
+                View Syllabus <span className="ml-2">→</span>
+              </a>
             </div>
             <div className="bg-white p-8 md:p-10 border border-slate-100 shadow-sm hover:shadow-2xl transition-all rounded-[2rem] flex-1 group">
               <span className="text-3xl md:text-4xl text-primary mb-4 md:mb-6 block">☁️</span>
               <h4 className="text-lg md:text-xl font-bold mb-2 text-slate-900 tracking-tight">Cloud Solutions</h4>
               <p className="text-slate-500 font-medium text-[10px] md:text-xs mb-6 uppercase tracking-wider leading-relaxed break-words whitespace-normal">Infrastructure as code, AWS/Azure, and high-availability design.</p>
-              <Link className="text-primary font-black text-[10px] uppercase tracking-[0.2em] flex items-center group-hover:translate-x-2 transition-transform" href="#">
-                View Syllabus <span>→</span>
-              </Link>
+              <a className="text-primary font-black text-[10px] uppercase tracking-[0.2em] flex items-center group-hover:translate-x-2 transition-transform" href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer">
+                View Syllabus <span className="ml-2">→</span>
+              </a>
             </div>
           </div>
         </div>

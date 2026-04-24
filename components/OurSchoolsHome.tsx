@@ -47,9 +47,9 @@ export default function OurSchoolsHome() {
       
       <div className="text-center mt-12 md:mt-16 px-6">
         <ScrollReveal delay={0.3}>
-          <button className="bg-slate-900 text-white w-full sm:w-auto px-12 py-5 rounded-xl font-black text-[10px] md:text-[11px] uppercase tracking-[0.2em] shadow-xl hover:opacity-90 transition-all">
+          <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="bg-slate-900 text-white w-full sm:w-auto px-12 py-5 rounded-xl font-black text-[10px] md:text-[11px] uppercase tracking-[0.2em] shadow-xl hover:opacity-90 transition-all text-center block max-w-xs mx-auto sm:inline-block">
             Explore All Programs
-          </button>
+          </a>
         </ScrollReveal>
       </div>
     </section>

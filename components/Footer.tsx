@@ -30,19 +30,19 @@ export default function Footer() {
                   <span className="text-white/70">of the Technical Curve.</span>
                 </h3>
                 <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-md font-medium mx-auto lg:mx-0 break-words">
-                  Join our elite network to receive weekly intelligence reports, career strategies, and AI-driven market insights.
+                  Join our elite network to receive weekly intelligence reports and career strategies.
                 </p>
               </div>
               <div className="w-full lg:col-span-6">
                 <div className="bg-white/5 p-2 sm:p-4 rounded-2xl border border-white/20 flex flex-col gap-3 sm:gap-4">
                   <input
                     type="email"
-                    placeholder="ENTER INSTITUTIONAL EMAIL"
+                    placeholder="ENTER EMAIL"
                     className="w-full bg-transparent px-4 py-4 rounded-xl text-[10px] font-black tracking-widest placeholder:text-white/40 outline-none focus:bg-white/5 transition-all text-white border border-white/10"
                   />
-                  <button className="bg-primary text-white w-full px-6 py-4 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-primary-dark transition-all shadow-2xl shadow-primary/40">
+                  <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="bg-primary text-white w-full px-6 py-4 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-primary-dark transition-all shadow-2xl shadow-primary/40 text-center">
                     Secure Access
-                  </button>
+                  </a>
                 </div>
                 <p className="text-[8px] sm:text-[9px] text-white/50 font-bold uppercase tracking-widest mt-4 md:mt-6 text-center lg:text-left">
                   🔒 Encrypted Connection. No Spam Protocols Active.
@@ -69,14 +69,14 @@ export default function Footer() {
             <p className="text-white/80 text-sm md:text-base font-medium leading-relaxed max-w-sm tracking-tight Poppins break-words">
               Bridging the gap between technical complexity and business mastery through AI-optimized learning systems.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-4 md:pt-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-4 md:pt-6">
               <div className="space-y-3">
-                <p className="text-[9px] font-black uppercase tracking-[0.3em] text-blue-400">Regional Center</p>
-                <p className="text-[10px] font-bold tracking-widest uppercase text-white">Port Harcourt, NG</p>
+                <p className="text-[9px] font-black uppercase tracking-[0.3em] text-blue-400">Centers</p>
+                <p className="text-[10px] font-bold tracking-widest uppercase text-white">PH | Lagos | Abuja</p>
               </div>
               <div className="space-y-3">
                 <p className="text-[9px] font-black uppercase tracking-[0.3em] text-blue-400">Inquiries</p>
-                <p className="text-[10px] font-bold tracking-widest uppercase text-white">hello@skillahead.ng</p>
+                <p className="text-[10px] font-bold tracking-widest uppercase text-white">info@skillahead.ng</p>
               </div>
             </div>
           </div>
@@ -111,24 +111,25 @@ export default function Footer() {
         {/* Global Footer Row */}
         <div className="mt-24 md:mt-40 pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12">
           <div className="flex gap-6 md:gap-8 justify-center">
-            <Link href="#" className="text-[9px] font-black uppercase tracking-[0.3em] text-white/60 hover:text-white transition-colors">Privacy Charter</Link>
-            <Link href="#" className="text-[9px] font-black uppercase tracking-[0.3em] text-white/60 hover:text-white transition-colors">Safety Protocol</Link>
+            <Link href="#" className="text-[9px] font-black uppercase tracking-[0.3em] text-white/60 hover:text-white transition-colors">Policy</Link>
           </div>
-          <p className="text-[8px] font-black uppercase tracking-[0.5em] text-white/40 text-center">© 2024 SKILLAHEAD ALL RIGHTS RESERVED.</p>
+          <p className="text-[8px] font-black uppercase tracking-[0.5em] text-white/40 text-center">© 2026 SKILLAHEAD ALL RIGHTS RESERVED.</p>
           <div className="flex gap-4">
-            {["LI", "FB", "IG"].map(social => ( social === "LI" ? (
-              <a key={social} href="https://linkedin.com/company/skillahead" target="_blank" rel="noopener noreferrer" className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-white/20 flex items-center justify-center text-[9px] md:text-[10px] font-black text-white/60 hover:border-blue-400 hover:text-blue-400 transition-all bg-white/5">
-                {social}
+            {[
+              { id: "LI", href: "https://www.linkedin.com/company/skillahead/" },
+              { id: "FB", href: "https://web.facebook.com/skillaheadng" },
+              { id: "IG", href: "https://www.instagram.com/skillaheadng" }
+            ].map(social => (
+              <a 
+                key={social.id} 
+                href={social.href} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-white/20 flex items-center justify-center text-[9px] md:text-[10px] font-black text-white/60 hover:border-blue-400 hover:text-blue-400 transition-all bg-white/5"
+              >
+                {social.id}
               </a>
-            ) : social === "IG" ? (
-              <a key={social} href="https://instagram.com/skillahead" target="_blank" rel="noopener noreferrer" className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-white/20 flex items-center justify-center text-[9px] md:text-[10px] font-black text-white/60 hover:border-blue-400 hover:text-blue-400 transition-all bg-white/5">
-                {social}
-              </a>
-            ) : (
-              <Link key={social} href="#" className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-white/20 flex items-center justify-center text-[9px] md:text-[10px] font-black text-white/60 hover:border-blue-400 hover:text-blue-400 transition-all bg-white/5">
-                {social}
-              </Link>
-            )))}
+            ))}
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 
 export default function WhySkillAhead() {
@@ -50,14 +51,16 @@ export default function WhySkillAhead() {
           
           <div className="w-full lg:col-span-6 relative mt-12 lg:mt-0">
             <ScrollReveal direction="left" delay={0.3}>
-              <div className="aspect-square bg-slate-50 rounded-[3rem] relative overflow-hidden flex items-center justify-center border border-slate-100 shadow-inner">
-                 <div className="absolute inset-0 opacity-10" style={{ 
-                   backgroundImage: 'radial-gradient(var(--primary) 0.5px, transparent 0.5px)',
-                   backgroundSize: '30px 30px'
-                 }}></div>
-                 <div className="relative z-10 p-8 md:p-12 text-center space-y-6 md:space-y-8">
-                    <div className="w-16 h-16 md:w-24 md:h-24 bg-white rounded-full shadow-2xl flex items-center justify-center text-3xl md:text-4xl mx-auto border border-slate-50">💡</div>
-                    <h4 className="text-xl md:text-2xl font-black text-slate-900 leading-snug">Bridge the Gap between <br/> Theory and Impact</h4>
+              <div className="aspect-square bg-slate-50 rounded-[3rem] relative overflow-hidden flex items-center justify-center border border-slate-100 shadow-2xl group">
+                 <Image 
+                    src="/theory-to-impact.png" 
+                    alt="Bridge the Gap" 
+                    fill 
+                    className="object-cover group-hover:scale-105 transition-transform duration-[2s]"
+                 />
+                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60"></div>
+                 <div className="relative z-10 p-8 md:p-12 text-center space-y-4 text-white">
+                    <h4 className="text-xl md:text-2xl font-black leading-snug tracking-tight">Bridge the Gap between <br/> Theory and Impact</h4>
                  </div>
               </div>
             </ScrollReveal>
