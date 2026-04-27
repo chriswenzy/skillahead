@@ -12,6 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://skillahead.ng'),
   title: "Skillahead | Next Era of Technical Mastery",
   description: "Accelerate your career with industry-vetted technical education and world-class specializations in Data and Programming.",
   keywords: ["Technical Mastery", "Data Science School", "Programming Education", "Skillahead", "Tech Career Transition", "Professional Upskilling"],
