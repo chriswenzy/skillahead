@@ -6,7 +6,21 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
+import { Suspense } from "react";
+
 export default function RegistrationPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-slate-50 flex items-center justify-center p-6">
+        <div className="w-8 h-8 border-4 border-primary/20 border-t-primary rounded-full animate-spin"></div>
+      </div>
+    }>
+      <RegistrationContent />
+    </Suspense>
+  );
+}
+
+function RegistrationContent() {
   const searchParams = useSearchParams();
   const initialCourse = searchParams.get("course") || "";
 
