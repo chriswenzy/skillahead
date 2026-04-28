@@ -88,7 +88,7 @@ export default function SchoolOfProgramming() {
                          <span className="text-slate-900">{pkg.duration}</span>
                        </div>
                        <p className="text-xs font-black text-primary uppercase leading-relaxed tracking-widest">Outcome: <span className="text-slate-600 normal-case font-medium">{pkg.outcome}</span></p>
-                       <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="w-full py-5 md:py-6 rounded-2xl bg-slate-900 text-white font-black text-[10px] md:text-[11px] uppercase tracking-widest hover:bg-black transition-all shadow-xl shadow-slate-900/20 text-center">Enroll in Course</a>
+                       <a href={`/register?course=${encodeURIComponent(pkg.name)}`} className="w-full py-5 md:py-6 rounded-2xl bg-slate-900 text-white font-black text-[10px] md:text-[11px] uppercase tracking-widest hover:bg-black transition-all shadow-xl shadow-slate-900/20 text-center">Enroll in Course</a>
                     </div>
                  </div>
                </ScrollReveal>

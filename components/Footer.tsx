@@ -40,7 +40,7 @@ export default function Footer() {
                     placeholder="ENTER EMAIL"
                     className="w-full bg-transparent px-4 py-4 rounded-xl text-[10px] font-black tracking-widest placeholder:text-white/40 outline-none focus:bg-white/5 transition-all text-white border border-white/10"
                   />
-                  <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="bg-primary text-white w-full px-6 py-4 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-primary-dark transition-all shadow-2xl shadow-primary/40 text-center">
+                  <a href="mailto:skillaheadng@gmail.com" className="bg-primary text-white w-full px-6 py-4 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-primary-dark transition-all shadow-2xl shadow-primary/40 text-center">
                     Secure Access
                   </a>
                 </div>

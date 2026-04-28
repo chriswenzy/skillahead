@@ -46,13 +46,13 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="col-span-12 lg:col-span-5 space-y-12 md:space-y-16 py-10 lg:pl-10">
             <div className="space-y-10 md:space-y-12">
-               <ScrollReveal direction="left" delay={0.2} className="space-y-3 md:space-y-4 text-center lg:text-left">
-                 <h4 className="text-[10px] md:text-xs font-black uppercase tracking-widest text-primary">Direct Contact</h4>
-                 <div className="space-y-1 md:space-y-2">
-                   <p className="text-xl md:text-2xl font-black text-slate-900">info@skillahead.ng</p>
-                   <p className="text-lg md:text-xl font-bold text-slate-500 tracking-tight">+234 806 619 9860</p>
-                 </div>
-               </ScrollReveal>
+                <ScrollReveal direction="left" delay={0.2} className="space-y-3 md:space-y-4 text-center lg:text-left">
+                  <h4 className="text-[10px] md:text-xs font-black uppercase tracking-widest text-primary">Direct Contact</h4>
+                  <div className="space-y-1 md:space-y-2">
+                    <p className="text-xl md:text-2xl font-black text-slate-900">info@skillahead.ng</p>
+                    <p className="text-lg md:text-xl font-bold text-slate-500 tracking-tight">+234 806 619 9860</p>
+                  </div>
+                </ScrollReveal>
                
                <div className="space-y-6 md:space-y-8">
                  <ScrollReveal direction="left" delay={0.3} className="text-center lg:text-left">

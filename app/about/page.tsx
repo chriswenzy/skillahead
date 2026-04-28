@@ -55,85 +55,23 @@ export default function About() {
         </div>
       </section>
 
-      {/* Academic Board / Faculty */}
-      <section className="py-16 md:py-24 bg-surface">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-16 container">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-20 gap-8">
-            <div className="max-w-2xl space-y-4">
-              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary">Governance</span>
-              <h2 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight">The Academic Board</h2>
-              <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed">
-                Chaired by world-renowned thinkers, our board ensures the intellectual integrity of every program.
-              </p>
-            </div>
-            <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border-2 border-slate-900 text-slate-900 font-black text-[10px] uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all shadow-xl">
-              View All Faculty
-            </a>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-            {[
-              // {
-              //   name: "Anietie Etuk",
-              //   role: "Founder of SkillAhead Academy || Data Specialist",
-              //   image: "/team/anietie-v2.png"
-              // },
-              {
-                name: "Mr Gospel Chinedu Nwachukwu",
-                role: "Data Analytics | Instructor || Specializing in SQL and Tableau",
-                image: "/team/gospel-v2.png"
-              },
-              {
-                name: "Mr Jegbefume Anthony",
-                role: "Data Analytics Instructor | Excel, PowerBI",
-                image: "/team/jegbefume-v2.png"
-              }
-            ].map((member, i) => (
-              <ScrollReveal key={i} delay={i * 0.1} direction="up">
-                <div className="group relative">
-                  <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl mb-8 relative">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  </div>
-                  <div className="space-y-2">
-                    <h4 className="text-xl md:text-2xl font-black text-slate-900 tracking-tight">{member.name}</h4>
-                    <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary leading-relaxed">
-                      {member.role}
-                    </p>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Faculty & Team Statistics */}
 
       {/* Leadership / Teams Statistics */}
       <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 text-center">
           {[
             {
               title: "Faculty Team",
               count: 22,
               desc: "Experienced professionals who teach from real industry experience—not just theory.",
-              placeholders: 5
+              placeholders: 14
             },
             {
               title: "Admin Team",
               count: 9,
               desc: "The people ensuring your learning experience is smooth, structured, and impactful.",
-              placeholders: 4
-            },
-            {
-              title: "Board of Directors",
-              count: 7,
-              desc: "Strategic leaders guiding the vision and growth of SkillAhead.",
-              placeholders: 3
+              placeholders: 8
             }
           ].map((team, i) => (
             <ScrollReveal key={i} delay={i * 0.1} direction="up">
@@ -141,7 +79,7 @@ export default function About() {
                 {/* Image Holder / Avatar Stack */}
                 <div className="relative h-16 w-full flex justify-center md:justify-start">
                   <div className="flex -space-x-4">
-                    {Array.from({ length: team.placeholders }).map((_, idx) => (
+                    {Array.from({ length: 5 }).map((_, idx) => (
                       <div
                         key={idx}
                         className="w-14 h-14 rounded-full border-4 border-white bg-slate-100 flex items-center justify-center text-[10px] font-black text-slate-400 overflow-hidden relative shadow-lg group-hover:scale-110 transition-transform"
@@ -152,7 +90,7 @@ export default function About() {
                       </div>
                     ))}
                     <div className="w-14 h-14 rounded-full border-4 border-white bg-primary flex items-center justify-center text-[11px] font-black text-white relative shadow-lg z-0">
-                      +{team.count - team.placeholders}
+                      +{team.count - 5}
                     </div>
                   </div>
                 </div>
@@ -167,6 +105,111 @@ export default function About() {
               </div>
             </ScrollReveal>
           ))}
+        </div>
+      </section>
+
+      {/* Detailed Faculty Section */}
+      <section className="py-20 md:py-32 bg-slate-50">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-16 container">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8">
+            <div className="max-w-2xl space-y-4">
+              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary">Leadership</span>
+              <h2 className="text-4xl md:text-5xl font-black text-[#00359E] tracking-tight">Our Faculty</h2>
+              <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed">
+                Our programs are taught by a panel of industry veterans, senior architects, and researchers who ensure the highest educational standards.
+              </p>
+            </div>
+            <a href="https://wa.me/2348066199860" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-widest hover:gap-3 transition-all">
+              Meet All Mentors <span className="text-lg">→</span>
+            </a>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-x-8 md:gap-y-12">
+            {[
+              { name: "Anietie Etuk", role: "Founder || Data Specialist", image: "/team/faculty/Anietie Etuk.png" },
+              { name: "Gospel Chinedu Nwachukwu", role: "Instructor || SQL & Tableau", image: "/team/faculty/Gospel Chinedu Nwachukwu.jpeg" },
+              { name: "Jegbefume Anthony", role: "Instructor || Excel & PowerBI", image: "/team/faculty/Jegbefume Anthony.jpeg" },
+              { name: "Afolayan Toyosi Helen", role: "Faculty Member", image: "/team/faculty/Afolayan Toyosi Helen.jpeg" },
+              { name: "Sholesi Adebimpe", role: "Faculty Member", image: "/team/faculty/Sholesi Adebimpe.jpeg" },
+              { name: "Emilefo Benjamin Asimiafele", role: "Faculty Member", image: "/team/faculty/Emilefo Benjamin Asimiafele.jpeg" },
+              { name: "Lukman Adeola", role: "Faculty Member", image: "/team/faculty/Lukman Adeola.jpeg" },
+              { name: "Rume Eburu", role: "Faculty Member", image: "/team/faculty/Rume Eburu.jpeg" },
+              { name: "Asogwa Chinenye", role: "Faculty Member", image: "/team/faculty/Asogwa chinenye.png" },
+              { name: "Iroanya Esther", role: "Faculty Member", image: "/team/faculty/Iroanya Esther.png" },
+              { name: "Joy Asogwa", role: "Faculty Member", image: "/team/faculty/Joy Asogwa.png" },
+              { name: "Ogundairo Elizabeth Oluwayemisi", role: "Faculty Member", image: "/team/faculty/Ogundairo Elizabeth Oluwayemisi.png" },
+              { name: "Okolo Vivian", role: "Faculty Member", image: "/team/faculty/Okolo Vivian.jpeg" },
+              { name: "Paul Odinakachukwu Anumodu", role: "Faculty Member", image: "/team/faculty/Paul Odinakachukwu Anumodu.jpeg" }
+            ].map((member, i) => (
+              <ScrollReveal key={i} delay={i * 0.05} direction="up">
+                <div className="group space-y-5">
+                  <div className="aspect-[4/5] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-xl relative bg-white border border-slate-100">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60"></div>
+                  </div>
+                  <div className="space-y-1">
+                    <h4 className="text-base md:text-lg font-black text-[#00359E] tracking-tight leading-tight">{member.name}</h4>
+                    <p className="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest">
+                      {member.role}
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Admin Section */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-16 container">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8">
+            <div className="max-w-2xl space-y-4">
+              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary">Management</span>
+              <h2 className="text-4xl md:text-5xl font-black text-[#00359E] tracking-tight">The Admin Team</h2>
+              <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed">
+                The people ensuring your learning experience is smooth, structured, and impactful from enrollment to graduation.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-x-8 md:gap-y-12">
+            {[
+              { name: "Ernest Oyina-Hannah Willie", role: "Operations Manager", image: "/team/admin/Ernest Oyina-Hannah Willie.jpeg" },
+              { name: "Martha Tamunoagbani", role: "Student Success", image: "/team/admin/Martha Tamunoagbani.jpeg" },
+              { name: "Faith Deele", role: "Curriculum Flow", image: "/team/admin/Faith Deele.jpeg" },
+              { name: "Gift Macaulay", role: "Enrollment & Support", image: "/team/admin/Gift Macaulay.jpeg" },
+              { name: "Etop Grace Ekpenyong", role: "Partnerships", image: "/team/admin/Etop Grace Ekpenyong.png" },
+              { name: "Aminat Janet Abdullaziz", role: "Strategic Lead", image: "/team/admin/Aminat Janet Abdullaziz.jpeg" },
+              { name: "Clement Peace", role: "Academic Services", image: "/team/admin/Clement Peace.jpeg" },
+              { name: "Esther Macaulay", role: "Administrative Support", image: "/team/admin/Esther Macaulay.jpeg" }
+            ].map((member, i) => (
+              <ScrollReveal key={i} delay={i * 0.05} direction="up">
+                <div className="group space-y-5">
+                  <div className="aspect-[4/5] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-xl relative bg-white border border-slate-100">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60"></div>
+                  </div>
+                  <div className="space-y-1">
+                    <h4 className="text-base md:text-lg font-black text-[#00359E] tracking-tight leading-tight">{member.name}</h4>
+                    <p className="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest">
+                      {member.role}
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 

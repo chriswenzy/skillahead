@@ -117,7 +117,11 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link href="/contact" className={`hidden sm:inline-block transition-all duration-500 rounded font-black text-[10px] uppercase tracking-[0.2em] shadow-2xl hover:scale-105 active:scale-95 text-center ${scrolled ? "bg-primary text-white px-6 py-2.5" : "bg-primary text-white px-8 py-3.5"
+            <Link href="/register" className={`hidden lg:inline-block transition-all duration-500 rounded font-black text-[10px] uppercase tracking-[0.2em] shadow-xl hover:shadow-primary/20 hover:scale-105 active:scale-95 text-center ${scrolled ? "bg-primary text-white px-6 py-2.5" : "bg-white text-primary border-2 border-primary/20 px-8 py-3.5"
+              }`}>
+              ENROLL
+            </Link>
+            <Link href="/contact" className={`hidden sm:inline-block transition-all duration-500 rounded font-black text-[10px] uppercase tracking-[0.2em] shadow-2xl hover:scale-105 active:scale-95 text-center ${scrolled ? "bg-slate-900 text-white px-6 py-2.5" : "bg-primary text-white px-8 py-3.5"
               }`}>
               CONTACT
             </Link>
@@ -165,9 +169,12 @@ export default function Navbar() {
               </div>
             </div>
             
-            <div className="pt-8 border-t border-slate-100">
-              <Link href="/contact" className="inline-block bg-primary text-white w-full py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-2xl text-center">
-                Get Started
+            <div className="pt-8 border-t border-slate-100 space-y-4">
+              <Link href="/register" className="inline-block bg-primary text-white w-full py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-2xl text-center">
+                Enroll Now
+              </Link>
+              <Link href="/contact" className="inline-block border-2 border-slate-200 text-slate-900 w-full py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] text-center">
+                Get Specialized
               </Link>
             </div>
           </div>
