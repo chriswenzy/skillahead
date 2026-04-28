@@ -35,7 +35,7 @@ function RegistrationContent() {
     course: initialCourse,
     location: "Physical",
     timing: "Weekday",
-    month: "May 2024",
+    month: "May",
     agreed: false
   });
 
@@ -85,7 +85,7 @@ function RegistrationContent() {
     "Fullstack Web Development"
   ];
 
-  const months = ["May 2024", "June 2024", "July 2024", "August 2024"];
+  const months = ["May", "June", "July", "August"];
 
   if (isSuccess) {
     return (
